@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-# 0-square.py by Peace Chinagwam
-"""Defines a square """
+"""defines class square """
 
 
 class Square:
-    """Does nothing"""
+    """ empty square """
     pass
