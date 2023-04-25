@@ -1,4 +1,5 @@
 #!/usr/bin/node
+/* a script that writes a string to a file. */
 
 const fs = require('fs');
 
@@ -11,7 +12,6 @@ fs.writeFile(filePath, content, 'utf-8', (err) => {
   if (err) {
     // Print error object if error occurred during writing
     console.error(err);
-  } else {
-    console.log(`Successfully wrote to file: ${filePath}`);
-  }
+ }
+   // console.log(`Successfully wrote to file: ${filePath}`);
 });
