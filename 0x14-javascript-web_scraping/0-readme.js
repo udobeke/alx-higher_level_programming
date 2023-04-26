@@ -2,11 +2,12 @@
 /* script to read files */
 
 const fs = require('fs');
-const filePath = process.argv[2];
-fs.readFile(filePath, 'utf-8', (err, data) => {
-  if (err) {
-  console.error(err);
+const filename = process.argv[2];
+
+fs.readFile(filename, 'utf-8', (error, content) => {
+  if (error) {
+    console.log(error);
   } else {
-    return;
-    console.log(data);
+    console.log(content);
+  }
 });
