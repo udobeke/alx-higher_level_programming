@@ -16,4 +16,5 @@ request(url, (err, res, body) => {
     }
   }
   console.log(count);
+ }
 });
