@@ -10,7 +10,7 @@ const url = process.argv[2];
 // Send GET request to fetch webpage content
 request.get(url, (err, res, body) => {
   if (err) console.error(err);
-    fs.writeFile(filePath, body, err => {
-      if (err) console.error(err);
+  fs.writeFile(filePath, body, err => {
+  if (err) console.error(err);
   });
 });
