@@ -8,10 +8,11 @@ const url = process.argv[2];
 
 // Send GET request to the URL
 request(url, (err, res, body) => {
-  if (err) 
+  if (err) {
     // Print error if request encounters an error
-    console.error(err);
+    console.log(err);
+  } else {
     // Print status code
     console.log(`code: ${res.statusCode}`);
+  }
 });
-
